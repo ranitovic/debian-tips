@@ -81,7 +81,7 @@ We need to implement this on the server as well if we need to use GitHub to upda
 mkdir ~/.ssh nano ~/.ssh/config
 ```
 
-```console
+```shell
 Host mysite
 HostName mysite.com
 Port 2222
@@ -119,8 +119,11 @@ ssh mysite
 #### Copy a file to the remote SSH server
 
 ```console
-scp -i ~/.ssh/mysite_rsa *.pdf myremoteuser@mysite.org:
+scp -i ~/.ssh/mysite_rsa *.pdf myremoteuser@mysite.com:
 ```
 
 #### Copy a file from the remote SSH server
-scp -i ~/.ssh/mysite_rsa myremoteuser@mysite.org:/file/to/send /where/to/put
+```console
+scp -i ~/.ssh/mysite_rsa myremoteuser@mysite.com:/file/to/send /where/to/put
+```
+
