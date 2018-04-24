@@ -120,7 +120,7 @@ ssh mysite
 #### Copy a file to the remote SSH server
 
 ```console
-scp -i ~/.ssh/mysite_rsa *.pdf mysite:
+scp -P 2022 -i ~/.ssh/mysite_rsa *.pdf mysite:
 ```
 
 The above example is using the alias from the ~/.ssh/config.
@@ -131,7 +131,7 @@ We can also use the full form:
 
 #### Copy a file from the remote SSH server
 ```console
-scp -i ~/.ssh/mysite_rsa mysite:/file/to/send /where/to/put
+scp -P 2022 -i ~/.ssh/mysite_rsa mysite:/file/to/send /where/to/put
 ```
 
 The above example is using the alias from the ~/.ssh/config.
