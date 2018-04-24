@@ -127,7 +127,7 @@ The above example is using the alias from the ~/.ssh/config.
 
 We can also use the full form:
 
-scp -i ~/.ssh/mysite_rsa *.pdf myremoteuser@mysite.com:
+`scp -i ~/.ssh/mysite_rsa *.pdf myremoteuser@mysite.com:`
 
 #### Copy a file from the remote SSH server
 ```console
@@ -138,4 +138,4 @@ The above example is using the alias from the ~/.ssh/config.
 
 We can also use the full form:
 
-scp -i ~/.ssh/mysite_rsa myremoteuser@mysite.com:/file/to/send /where/to/put
+"scp -i ~/.ssh/mysite_rsa myremoteuser@mysite.com:/file/to/send /where/to/put"
