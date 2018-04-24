@@ -73,6 +73,7 @@ Show the SSH server log
 # Configure SSH on the developer machine
 
 This part explains how to configure the SSH client on the development machine.
+
 We need to implement this on the server as well if we need to use GitHub to update server.
 
 #### Create a SSH config file
@@ -119,11 +120,22 @@ ssh mysite
 #### Copy a file to the remote SSH server
 
 ```console
-scp -i ~/.ssh/mysite_rsa *.pdf myremoteuser@mysite.com:
+scp -i ~/.ssh/mysite_rsa *.pdf mysite:
 ```
+
+The above example is using the alias from the ~/.ssh/config.
+
+We can also use the full form:
+
+scp -i ~/.ssh/mysite_rsa *.pdf myremoteuser@mysite.com:
 
 #### Copy a file from the remote SSH server
 ```console
-scp -i ~/.ssh/mysite_rsa myremoteuser@mysite.com:/file/to/send /where/to/put
+scp -i ~/.ssh/mysite_rsa mysite:/file/to/send /where/to/put
 ```
 
+The above example is using the alias from the ~/.ssh/config.
+
+We can also use the full form:
+
+scp -i ~/.ssh/mysite_rsa myremoteuser@mysite.com:/file/to/send /where/to/put
