@@ -1,4 +1,4 @@
-Install PHP 7.1 on Debian 9.4
+# Install PHP 7.1 on Debian 9.4
 
 #### Become a root user
 ```console
