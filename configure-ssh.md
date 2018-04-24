@@ -138,4 +138,4 @@ The above example is using the alias from the ~/.ssh/config.
 
 We can also use the full form:
 
-"scp -i ~/.ssh/mysite_rsa myremoteuser@mysite.com:/file/to/send /where/to/put"
+`scp -i ~/.ssh/mysite_rsa myremoteuser@mysite.com:/file/to/send /where/to/put`
