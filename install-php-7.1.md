@@ -19,6 +19,8 @@ apt-cache search php7.1
 
 #### Install PHP
 
+Execute the lines below one by one:
+
 ```console
 apt install ca-certificates apt-transport-https
 wget -q https://packages.sury.org/php/apt.gpg -O- | apt-key add -
