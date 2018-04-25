@@ -11,7 +11,7 @@ usermod -a -G www-data myuser
 This example is for a Laravel application hosted in /var/www/html
 
 ```console
-chown -R www-data:www-data /var/www
+chown -R myuser:www-data /var/www
 find /var/www -type f -exec chmod 644 {} \;
 find /var/www -type d -exec chmod 755 {} \;
 chgrp -R www-data /var/www/html/storage /var/www/html/bootstrap/cache
