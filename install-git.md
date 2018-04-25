@@ -33,23 +33,8 @@ git push -u origin master
 
 #### Clone an existing project hosted on the GitHub
 
-Go to directory on developer machine where existing project will be cloned
-
-Execute the following commands using a root user:
+Go to a directory where existing project will be cloned
 
 ```console
-rm -rf /var/www/html
-
-chown -R myuser:www-data /var/www
-chmod -R 775 /var/www/writable-upload-directory
-```
-
-Execute the following commands using a non-root user:
-
-```console
-git init
-git add .
-git commit -m "Initial Commit"
-git remote add origin git@github.com:mygithubusername/name-of-your-newly-created-project.git
-git push -u origin master
+git clone git@github.com:mygithubusername/name-of-your-github-project.git
 ```
