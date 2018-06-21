@@ -38,3 +38,19 @@ Go to a directory where existing project will be cloned
 ```console
 git clone git@github.com:mygithubusername/name-of-your-github-project.git
 ```
+
+***
+
+#### Create a GitHub deployment SSH key
+
+If we need to deploy our application using GitHub,
+the most secure way is to create a read-only deployment key for that repository.
+
+First let's create a key pair on the production server
+
+```console
+ssh-keygen -t rsa -C "git@yoursite.com"
+```
+
+Go to repository in GitHub, choose "Settings", then "Deploy keys".
+Paste the public key generated above, and it will be the read only deployment key for that repository.
