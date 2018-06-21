@@ -46,10 +46,11 @@ git clone git@github.com:mygithubusername/name-of-your-github-project.git
 If we need to deploy our application using GitHub,
 the most secure way is to create a read-only deployment key for that repository.
 
-First let's create a key pair on the production server
+First, let's create a key pair on the production server
 
 ```console
-ssh-keygen -t rsa -C "git@yoursite.com"
+cd /home/your-user/.ssh
+ssh-keygen -t rsa -C "git@your-site.com"
 ```
 
 Go to repository in GitHub, choose "Settings", then "Deploy keys".
