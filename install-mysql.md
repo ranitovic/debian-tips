@@ -17,3 +17,15 @@ apt install mysql-server
 ```console
 systemctl status mysql
 ```
+
+#### Re-install MySQL
+
+```console
+systemctl stop mysql
+
+apt-get remove -y mysql-*
+
+apt-get purge -y mysql-*
+
+apt install mysql-server
+```
