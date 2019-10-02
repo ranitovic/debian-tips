@@ -23,6 +23,8 @@ systemctl status mysql
 ```console
 systemctl stop mysql
 
+cd
+
 apt-get remove -y mysql-*
 
 apt-get purge -y mysql-*
