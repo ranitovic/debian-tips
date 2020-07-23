@@ -1,4 +1,4 @@
-# Install Oracle MySQL Server on Debian 9.11
+# Install Oracle MySQL Server on Debian 9.12
 
 By default the "apt install mysql-server" command on Debian installs MariaDB server
 
